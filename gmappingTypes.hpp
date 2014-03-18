@@ -1,5 +1,5 @@
-#ifndef rock_gmapping_TYPES_HPP
-#define rock_gmapping_TYPES_HPP
+#ifndef gmapping_TYPES_HPP
+#define gmapping_TYPES_HPP
 
 /* If you need to define types specific to your oroGen components, define them
  * here. Required headers must be included explicitly
@@ -13,7 +13,7 @@
 #include <base/pose.h>
 #include <vector>
 
-namespace rock_gmapping {
+namespace gmapping {
 
 	struct Config {
 		bool inverted_laser; // (bool, default: false)

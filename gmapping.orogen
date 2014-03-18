@@ -1,4 +1,4 @@
-name "rock_gmapping"
+name "gmapping"
 
 # Optionally declare the version number
 # version "0.1"
@@ -7,7 +7,7 @@ name "rock_gmapping"
 # header, and this header will be loaded here
 
 import_types_from "base"
-import_types_from "rock_gmappingTypes.hpp"
+import_types_from "gmappingTypes.hpp"
 
 
 # Finally, it is pretty common that headers are directly loaded from an external
@@ -16,9 +16,8 @@ import_types_from "rock_gmappingTypes.hpp"
 # conventions, a common use-case would be:
 #
 
-using_library "openslam_gmapping"
+using_library "gmapping"
 
-#import_types_from "rock_gmapping/CustomType.hpp"
 
 # If this project uses data types that are defined in other oroGen projects,
 # these projects should be imported there as well.
@@ -27,7 +26,7 @@ using_library "openslam_gmapping"
 # Declare a new task context (i.e., a component)
 #
 # The corresponding C++ class can be edited in tasks/Task.hpp and
-# tasks/Task.cpp, and will be put in the rock_gmapping namespace.
+# tasks/Task.cpp, and will be put in the gmapping namespace.
 
 task_context "Task" do
     
@@ -39,7 +38,7 @@ task_context "Task" do
     # A configuration property (here, a std::string). Its value can be retrieved
     # in the C++ code with # _config_value.get() and _config_value.set(new_value).
     
-    property "config", "rock_gmapping::Config"
+    property "config", "gmapping::Config"
 
     # An input port, i.e. an object from which the component gets data from
     # other components' outputs
@@ -62,7 +61,7 @@ task_context "Task" do
     
     output_port "entropy", "double"
 
-    output_port "occupancy_grid", "rock_gmapping::OccupancyGrid"
+    output_port "occupancy_grid", "gmapping::OccupancyGrid"
 
     output_port "occupancy_grid_image", "/base/samples/frame/Frame"
 
@@ -70,7 +69,7 @@ task_context "Task" do
 
 
     operation('getDynamicMap').
-        returns('rock_gmapping::OccupancyGrid')
+        returns('gmapping::OccupancyGrid')
 
 
     transformer do
