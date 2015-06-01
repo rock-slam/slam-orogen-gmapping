@@ -2,11 +2,9 @@
   <description brief="gmapping orogen module">
    Orogen module for the gmapping lib from openslam (https://openslam.org/gmapping.html) by Grisetti, Stachniss and Burgard 
   </description>
+  <maintainer>Leif Christensen/leif.christensen@dfki.de</maintainer>
   <author>Krishna Raj Sapkota</author>
   <author>Leif Christensen/leif.christensen@dfki.de</author>
-  <license></license>
-  <url>http://</url>
-  <logo>http://</logo>
   <depend package="base/cmake" />
   <depend package="slam/gmapping"/>
   <depend package="drivers/orogen/transformer"/>
