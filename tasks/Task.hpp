@@ -4,8 +4,8 @@
 #define GMAPPING_TASK_TASK_HPP
 
 #include "gmapping/TaskBase.hpp"
-#include "../gmappingTypes.hpp"
-#include <base/samples/rigid_body_state.h>
+#include <gmapping/gmappingTypes.hpp>
+#include <base/samples/RigidBodyState.hpp>
 #include <boost/thread.hpp>
 
 

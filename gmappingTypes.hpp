@@ -9,8 +9,8 @@
  */
 
 #include <string>
-#include <base/time.h>
-#include <base/pose.h>
+#include <base/Time.hpp>
+#include <base/Pose.hpp>
 #include <vector>
 
 namespace gmapping {

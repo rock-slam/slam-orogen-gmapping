@@ -2,7 +2,7 @@
 
 #include "Task.hpp"
 #include <unistd.h>
-#include <base/logging.h>
+#include <base/Logging.hpp>
 #include <exception>
 #include <cstdlib>
 
